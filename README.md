@@ -66,7 +66,7 @@ NEXUS/
 
 ## 🛠️ Tecnologías
 ### Backend
-- **Node.js + Express** → API REST.  
+- **Node.js (v18.20.8 LTS) + Express** → API REST.  
 - **CORS y middlewares propios** → logging, 404 y errores.  
 - **Array local** → fuente de datos de productos.  
 
