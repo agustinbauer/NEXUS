@@ -30,36 +30,59 @@ El objetivo principal fue evolucionar la maqueta inicial hacia una aplicación *
 
 ## 🧱 Estructura del repositorio
 ```
-NEXUS/
-├─ README.md
-├─ backend/
-│  ├─ package.json
-│  └─ src/
-│     ├─ server.js
-│     ├─ data/
-│     │  └─ products.js
-│     ├─ routes/
-│     │  └─ products.routes.js
-│     └─ middlewares/
-│        ├─ logger.js
-│        ├─ notFound.js
-│        └─ errorHandler.js
-└─ client/
-   ├─ package.json
-   ├─ public/
-   │  └─ index.html
-   └─ src/
-      ├─ App.js
-      ├─ index.js
-      ├─ index.css
-      ├─ api.js
-      └─ components/
-         ├─ Navbar.jsx
-         ├─ Footer.jsx
-         ├─ ProductCard.jsx
-         ├─ ProductList.jsx
-         ├─ ProductDetail.jsx
-         └─ ContactForm.jsx
+📦 NEXUS
+├─ 📄 README.md
+├─ 📄 .gitignore
+├─ 📂 backend
+│  ├─ 📄 package.json
+│  ├─ 📄 package-lock.json
+│  └─ 📂 src
+│     ├─ 📄 server.js
+│     ├─ 📂 data
+│     │  └─ 📄 products.js
+│     ├─ 📂 routes
+│     │  └─ 📄 products.routes.js
+│     └─ 📂 middlewares
+│        ├─ 📄 logger.js
+│        ├─ 📄 notFound.js
+│        └─ 📄 errorHandler.js
+├─ 📂 client
+│  ├─ 📄 package.json
+│  ├─ 📄 package-lock.json
+│  ├─ 📂 public
+│  │  ├─ 📄 index.html
+│  │  ├─ 📄 logo-hj.svg
+│  │  └─ 📂 img
+│  │     ├─ 🖼️ Aparador-Uspallata.png
+│  │     ├─ 🖼️ Biblioteca-Recoleta.png
+│  │     ├─ 🖼️ Butaca-Mendoza.png
+│  │     ├─ 🖼️ Escritorio-Costa.png
+│  │     ├─ 🖼️ Mesa-Comedor-Pampa.png
+│  │     ├─ 🖼️ Mesa-de-Centro-Araucaria.png
+│  │     ├─ 🖼️ Mesa-de-Noche-Aconcagua.png
+│  │     ├─ 🖼️ Silla-de-Trabajo-Belgrano.png
+│  │     ├─ 🖼️ Sillas-Cordoba.png
+│  │     ├─ 🖼️ Sillon-Copacabana.png
+│  │     └─ 🖼️ Sofa-Patagonia.png
+│  └─ 📂 src
+│     ├─ 📄 App.js
+│     ├─ 📄 index.js
+│     ├─ 📄 index.css
+│     ├─ 📄 api.js
+│     ├─ 📂 components
+│     │  ├─ 📄 Navbar.jsx
+│     │  ├─ 📄 Footer.jsx
+│     │  ├─ 📄 Hero.jsx
+│     │  ├─ 📄 ProductCard.jsx
+│     │  ├─ 📄 ProductList.jsx
+│     │  ├─ 📄 ProductDetail.jsx
+│     │  └─ 📄 ContactForm.jsx
+│     └─ 📂 pages
+│        ├─ 📄 HomePage.jsx
+│        ├─ 📄 ProductsPage.jsx
+│        └─ 📄 ContactPage.jsx
+
+
 ```
 
 ---

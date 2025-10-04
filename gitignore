@@ -33,6 +33,7 @@ client/.env
 
 # MacOS
 .DS_Store
+**/.DS_Store
 
 # Misc
 *.tgz
