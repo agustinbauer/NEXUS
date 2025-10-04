@@ -1,31 +1,14 @@
 // Fuente de datos local (array de objetos)
 export const products = [
-{
-id: 1,
-name: "Sillón Nórdico",
-price: 199999,
-image: "https://picsum.photos/seed/sillon/600/400",
-description: "Sillón estilo nórdico tapizado en lino, patas de madera."
-},
-{
-id: 2,
-name: "Mesa de Comedor",
-price: 349999,
-image: "https://picsum.photos/seed/mesa/600/400",
-description: "Mesa rectangular en madera maciza para 6 personas."
-},
-{
-id: 3,
-name: "Silla Eames",
-price: 69999,
-image: "https://picsum.photos/seed/silla/600/400",
-description: "Silla Eames plástica con patas de madera."
-},
-{
-id: 4,
-name: "Rack TV",
-price: 159999,
-image: "https://picsum.photos/seed/rack/600/400",
-description: "Rack para TV con estantes y puertas."
-}
+{ id: 1, name: "Aparador Uspallata", price: 250, image: "/img/Aparador-Uspallata.png", description: "Cada Aparador Uspallata refleja la pasión por la artesanía y la funcionalidad cotidiana, diseñada para acompañarte en tu hogar con calidez y elegancia.", details: "Madera nativa de algarrobo certificada FSC, acabados naturales con aceite de lino y cera de abejas. Tres cajones y dos compartimientos que cuentan historias de manos expertas." },
+{ id: 2, name: "Biblioteca Recoleta", price: 400, image: "/img/Biblioteca-Recoleta.png", description: "La Biblioteca Recoleta combina tradición y modernidad, ofreciendo un refugio para tus libros y recuerdos más preciados.", details: "Estructura en madera reciclada con tintes vegetales, cinco estantes regulables. Inspirada en la herencia de los talleres locales, pensada para durar generaciones." },
+{ id: 3, name: "Butaca Mendoza", price: 150, image: "/img/Butaca-Mendoza.png", description: "La Butaca Mendoza abraza la comodidad sin sacrificar estilo, invitándote a sentarte y disfrutar de momentos cotidianos con armonía.", details: "Tapizado en tela natural, patas de madera nativa tratada sin químicos agresivos. Diseño que equilibra nostalgia y modernidad con atención al detalle." },
+{ id: 4, name: "Escritorio Costa", price: 600, image: "/img/Escritorio-Costa.png", description: "Cada Escritorio Costa inspira concentración y creatividad, pensado para quienes valoran la elegancia funcional y la sostenibilidad.", details: "Fabricado con MDF ecológico y acabados de bajo COV, incluye cajonera lateral y bandeja deslizable. Compromiso con longevidad y cuidado de materiales." },
+{ id: 5, name: "Mesa Comedor Pampa", price: 600, image: "/img/Mesa-Comedor-Pampa.png", description: "La Mesa Comedor Pampa es un encuentro entre tradición y diseño contemporáneo, ideal para compartir historias y momentos alrededor de ella.", details: "Madera de quebracho de origen responsable, acabado natural con aceite de linaza. Capacidad para 6-8 personas, diseñada para perdurar y ser heredada." },
+{ id: 6, name: "Mesa de Centro Araucaria", price: 600, image: "/img/Mesa-de-Centro-Araucaria.png", description: "Mesa de Centro Araucaria, donde cada superficie respira calma y cuidado, hecha para sostener conversaciones y recuerdos de tu sala de estar.", details: "Acabado con cera de abejas de origen local, estante inferior para libros o plantas. Materiales recuperados garantizan sostenibilidad y longevidad." },
+{ id: 7, name: "Mesa de Noche Aconcagua", price: 600, image: "/img/Mesa-de-Noche-Aconcagua.png", description: "La Mesa de Noche Aconcagua acompaña tus noches con discreta elegancia, ofreciendo un espacio cálido y funcional al lado de tu cama.", details: "Fabricada en madera caldén certificada FSC, cajón con correderas metálicas suaves. Compromiso con la herencia y la sustentabilidad en cada detalle." },
+{ id: 8, name: "Silla de Trabajo Belgrano", price: 600, image: "/img/Silla-de-Trabajo-Belgrano.png", description: "La Silla de Trabajo Belgrano está pensada para largas jornadas con confort y estilo, respetando tu postura y el medio ambiente.", details: "Altura regulable, respaldo acolchado con telas de bajo impacto ambiental, ruedas duraderas. Inspirada en principios de sostenibilidad y materiales nobles." },
+{ id: 9, name: "Sillas Córdoba", price: 600, image: "/img/Sillas-Cordoba.png", description: "Sillas Córdoba, el equilibrio entre robustez y calidez, perfectas para conversaciones, cenas y encuentros memorables.", details: "Estructura de madera nativa, tapizado en telas vegetales lavables, set de 2. Cada silla cuenta con historia de manos expertas y materiales responsables." },
+{ id: 10, name: "Sillón Copacabana", price: 600, image: "/img/Sillon-Copacabana.png", description: "El Sillón Copacabana invita al descanso con estilo y personalidad, fusionando confort, diseño y respeto por la naturaleza.", details: "Tapizado en algodón natural, cojines desmontables, madera tratada sin químicos. Garantía extendida y compromiso con la longevidad de la pieza." },
+{ id: 11, name: "Sofá Patagonia", price: 600, image: "/img/Sofa-Patagonia.png", description: "Sofá Patagonia, una pieza que abraza y conecta tradición y modernidad, perfecta para crear memorias en tu hogar.", details: "Tapizado premium antimanchas, estructura robusta de madera certificada FSC, cojines de alta densidad. Parte del programa 'Herencia Viva' para asegurar longevidad." }
 ];

@@ -1,43 +1,82 @@
 import React, { useState } from "react";
 
-
 export default function ContactForm() {
-const [form, setForm] = useState({ nombre: "", email: "", mensaje: "" });
-const [sent, setSent] = useState(false);
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
+  const onChange = (e) =>
+    setForm({ ...form, [e.target.name]: e.target.value });
 
-const handleChange = (e) => {
-const { name, value } = e.target;
-setForm(prev => ({ ...prev, [name]: value }));
-};
+  const validateEmail = (email) => {
+    return /\S+@\S+\.\S+/.test(email); // validación básica
+  };
 
+  const onSubmit = (e) => {
+    e.preventDefault();
 
-const handleSubmit = (e) => {
-e.preventDefault();
-console.log("Contacto enviado:", form);
-setSent(true);
-};
+    // Validaciones
+    if (!form.name.trim()) {
+      setError("Por favor, ingresá tu nombre.");
+      setSubmitted(false);
+      return;
+    }
+    if (!form.email.trim() || !validateEmail(form.email)) {
+      setError("Por favor, ingresá un correo electrónico válido.");
+      setSubmitted(false);
+      return;
+    }
+    if (!form.message.trim()) {
+      setError("Por favor, escribí un mensaje.");
+      setSubmitted(false);
+      return;
+    }
 
+    // Si pasa todas las validaciones
+    console.log("Contacto:", form);
+    setError("");          // limpio error
+    setSubmitted(true);    // muestro mensaje de éxito
+    setForm({ name: "", email: "", message: "" }); // limpio formulario
+  };
 
-return (
-<section style={{ maxWidth: 520 }}>
-<h3>Contacto</h3>
-<form onSubmit={handleSubmit}>
-<div style={{ marginBottom: 12 }}>
-<label htmlFor="nombre">Nombre</label><br />
-<input id="nombre" name="nombre" value={form.nombre} onChange={handleChange} required />
-</div>
-<div style={{ marginBottom: 12 }}>
-<label htmlFor="email">Email</label><br />
-<input id="email" type="email" name="email" value={form.email} onChange={handleChange} required />
-</div>
-<div style={{ marginBottom: 12 }}>
-<label htmlFor="mensaje">Mensaje</label><br />
-<textarea id="mensaje" name="mensaje" rows="4" value={form.mensaje} onChange={handleChange} required />
-</div>
-<button type="submit">Enviar</button>
-</form>
-{sent && <p style={{ color: "green" }}>¡Gracias! Te contactaremos pronto.</p>}
-</section>
-);
+  return (
+    <form className="contact-form" onSubmit={onSubmit} noValidate>
+      <label htmlFor="name">Nombre</label>
+      <input
+        id="name"
+        name="name"
+        type="text"
+        placeholder="Tu nombre"
+        value={form.name}
+        onChange={onChange}
+      />
+
+      <label htmlFor="email">Correo electrónico</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="tu@email.com"
+        value={form.email}
+        onChange={onChange}
+      />
+
+      <label htmlFor="message">Mensaje</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Escribí tu mensaje…"
+        rows={5}
+        value={form.message}
+        onChange={onChange}
+      />
+
+      <button className="btn soft" type="submit">
+        Enviar
+      </button>
+
+      {error && <p className="form-error">{error}</p>}
+      {submitted && <p className="form-success">¡Gracias! Te responderemos pronto.</p>}
+    </form>
+  );
 }

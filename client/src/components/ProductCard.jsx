@@ -3,20 +3,12 @@ import React from "react";
 
 export default function ProductCard({ product, onClick }) {
 return (
-<article
-onClick={onClick}
-style={{
-cursor: "pointer",
-border: "1px solid #ddd",
-borderRadius: 8,
-overflow: "hidden",
-boxShadow: "0 1px 3px rgba(0,0,0,0.06)"
-}}
->
-<img src={product.image} alt={product.name} style={{ width: "100%", height: 200, objectFit: "cover" }} />
-<div style={{ padding: "0.75rem" }}>
-<h3 style={{ margin: 0 }}>{product.name}</h3>
-<p style={{ margin: "0.5rem 0", color: "#555" }}>${product.price.toLocaleString("es-AR")}</p>
+<article className="card product">
+<img src={product.image} alt={product.name} />
+<div className="content">
+<h3 style={{margin:"0 0 6px"}}>{product.name}</h3>
+<div className="price">${product.price.toLocaleString("es-AR")}</div>
+<button className="btn secondary" onClick={onClick}>VER MÁS</button>
 </div>
 </article>
 );
